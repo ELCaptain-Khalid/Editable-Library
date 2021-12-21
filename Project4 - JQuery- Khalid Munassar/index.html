@@ -1,0 +1,88 @@
+<!--  Khalid Munassar
+        CSC 395
+        Project#3
+ -->
+<!DOCTYPE html>
+<html lang="en">
+        <!-- This is modifying the header -->
+<head>
+    <meta charset="utf-8" />
+    <title> 📚Books📚</title>
+    <header> 🧠The mind library🧠 </header>
+    <!-- Linking to both CSS and JS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Jquery -->
+    <script src="Interact.js" defer></script>
+   
+    
+
+  
+
+</head>
+        <br>
+        <br>
+        <h1>Here are the list of books</h1>
+        
+<body>
+    
+        
+    <!-- created a div so I can have freedom with 
+        the styling while under the main
+     -->
+ <div class="row">    
+      
+       
+    <!-- this is the left column which holds the list  of books -->
+        <nav id="grid-container" >
+                
+        </nav>
+
+        <!-- main tag holds the buttons that the user would interact with -->
+<main id = "main" >
+                <!-- buttons for add and edit -->
+                <button type="button" id="Editing">Edit</button>
+                <button type="button" id="Adding">Add</button>
+                <button type="button" id="Deleting">Delete</button> 
+                <!-- this div holds the information for the books -->
+<div id="paraDiv">
+                <p>
+                        
+                        <label for="bookName"> Title:</label>
+                        <input type="text", id="bookName" name="bookName"  readonly placeholder="The Title">
+                                <span id="title"></span>
+                </p>
+
+                <p>
+                        <label for="authorName"> Author:</label>
+                        <input type="text", id="authorName" name="authorName"  readonly placeholder="The Author">
+                                <span id="author"></span>
+                </p>
+
+                <p>
+                        <label for="Copyright"> Copyright Date:</label>
+                        <input type="text", id="Copyright" name="Copyright"  readonly placeholder="Copyright">
+                                <span id="copyright"></span>
+                
+                </p>
+
+                <p> 
+                        <label for="pages">Pages: </label>
+                        <input type="text", id="pages" name="pages"  readonly placeholder="Pages ">
+                                <span id="pages"></span>         
+                        
+                </p>
+                             
+                
+                <img src="" id="image" > 
+
+                
+        </div>   
+                 <p id= "info" ></p>
+        </main>
+</div>  
+
+
+
+</body>
+
+</html>
